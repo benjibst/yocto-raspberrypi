@@ -1,0 +1,4 @@
+# <file system>     <mount point>  <type>  <options>         <dump>  <pass>
+LABEL=boot          /boot          vfat    defaults          0       2
+LABEL=root          /              ext4    defaults,noatime  0       1
+LABEL=root2         /mnt/root2     ext4    defaults,noatime  0       0

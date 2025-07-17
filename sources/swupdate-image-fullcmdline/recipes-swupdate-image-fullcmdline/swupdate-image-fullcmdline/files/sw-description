@@ -1,0 +1,13 @@
+software =
+{
+    version = "0.1.0";
+        images: (
+                {
+                        filename = "core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz";
+                        device="/dev/mmcblk0p3";
+                        type="raw";
+                        compressed = "zlib";
+			sha256="$swupdate_get_sha256(core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz)";
+                },   
+        );
+}
