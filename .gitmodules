@@ -14,3 +14,7 @@
 	path = sources/poky
 	url = https://github.com/yoctoproject/poky.git
 	branch = scarthgap
+[submodule "sources/meta-swupdate-boards"]
+	path = sources/meta-swupdate-boards
+	url = https://github.com/benjibst/meta-swupdate-boards.git
+	branch = scarthgap

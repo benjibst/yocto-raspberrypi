@@ -1,13 +1,20 @@
 software =
 {
-    version = "0.1.0";
-        images: (
-                {
-                        filename = "core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz";
-                        device="/dev/mmcblk0p3";
-                        type="raw";
-                        compressed = "zlib";
-			sha256="$swupdate_get_sha256(core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz)";
-                },   
-        );
+	version = "0.1.0";
+	hardware-compatibility = ["1.0"];
+	images= (
+			{
+				filename = "core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz";
+				type = "raw";
+				compressed="zlib"
+				device = "/dev/mmcblk0p3";
+				sha256 = "$swupdate_get_sha256(core-image-full-cmdline-@@MACHINE@@.rootfs.ext4.gz)";
+			}
+		);
+	uboot = (
+  			{
+    			name = "rpipart";
+    			value = "3";
+  			}
+	);
 }
