@@ -10,10 +10,6 @@
 	path = sources/meta-swupdate
 	url = https://github.com/sbabic/meta-swupdate.git
 	branch = scarthgap
-[submodule "sources/meta-swupdate-boards"]
-	path = sources/meta-swupdate-boards
-	url = https://github.com/sbabic/meta-swupdate-boards.git
-	branch = scarthgap
 [submodule "sources/poky"]
 	path = sources/poky
 	url = https://github.com/yoctoproject/poky.git
