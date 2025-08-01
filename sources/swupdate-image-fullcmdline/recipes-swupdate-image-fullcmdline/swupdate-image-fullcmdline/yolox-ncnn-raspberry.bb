@@ -1,14 +1,15 @@
 SUMMARY = "Fetch and build yolox-ncnn-raspberry"
 LICENSE = "CLOSED"
 
-SRC_URI = "ssh://git@gitlab.ewo.com:2222/connexx-dev/software/yolox-ncnn-raspberry.git;branch=main;protocol=ssh"
+SRCREV="${AUTOREV}"
+SRC_URI = "git://git@gitlab.ewo.com:2222/connexx-dev/software/yolox-ncnn-raspberry.git;branch=main;protocol=ssh"
 
-S = "${WORKDIR}/yoloxsrc"
+S = "${WORKDIR}/git"
 YOLOX_BASE="/root/yolox-ncnn-raspberry"
 inherit cmake
 
 do_configure:prepend() {
-    tar -xzvf precompiled_libs.tar.gz
+    tar -xzvf ${S}/precompiled_libs.tar.gz -C ${S}
 }
 
 do_compile:prepend() {

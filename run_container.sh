@@ -1,1 +1,6 @@
-docker run -it 	-v $(pwd)/sources:/home/yocto/rpi_yocto/sources	-v $(pwd)/build:/home/yocto/rpi_yocto/build rpi_yocto_build	
+docker run -it \
+ 	-v $(pwd)/sources:/home/yocto/rpi_yocto/sources	\
+	-v $(pwd)/build:/home/yocto/rpi_yocto/build \
+	-v $SSH_AUTH_SOCK:/ssh-agent \
+	-e SSH_AUTH_SOCK=/ssh-agent \
+	rpi_yocto_build
