@@ -18,6 +18,6 @@
 	path = sources/meta-swupdate-boards
 	url = https://github.com/benjibst/meta-swupdate-boards.git
 	branch = scarthgap
-[submodule "sources/yolox-ncnn-raspberry"]
-	path = sources/yolox-ncnn-raspberry
+[submodule "sources/yolox-ncnn-raspberry/recipes-yolox-ncnn-raspberry/yolox-ncnn-raspberry/files/yolox-ncnn-raspberry"]
+	path = sources/yolox-ncnn-raspberry/recipes-yolox-ncnn-raspberry/yolox-ncnn-raspberry/files/yolox-ncnn-raspberry
 	url = ssh://git@gitlab.ewo.com:2222/connexx-dev/software/yolox-ncnn-raspberry.git
